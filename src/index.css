@@ -1,13 +1,63 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  width: 60px;
+  margin-right: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #21222a;
+}
+
+.L-div {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px 20px 35px;
+  color: #61dafb;
+  font-weight: 700;
+}
+
+.R-div {
+  align-items: center;
+  padding: 40px 30px 10px 0;
+  color: #deebf8;
+  font-weight: 600;
+}
+
+.img-div {
+  background-image: url("/public/OIP.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  float: right;
+}
+
+.img-div img {
+  position: absolute;
+  float: right;
+}
+
+.main-div {
+  background-color: #282d35;
+  opacity: 0.95;
+  color: white;
+  padding: 40px 0 40px 50px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+li {
+  margin: 3px 0 3px 40px;
+}
+
+li::marker {
+  font-size: 1.5rem;
+  color: #61dafb;
 }
