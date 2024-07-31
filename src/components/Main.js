@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Main() {
   return (
-    <div className="img-div">
+    <>
+      <div className="img-div"></div>
       <div className="main-div">
         <h1>Fun facts about React</h1>
         <ul>
@@ -13,6 +14,6 @@ export default function Main() {
           <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
       </div>
-    </div>
+    </>
   );
 }

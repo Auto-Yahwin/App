@@ -1,7 +1,11 @@
-* {
+body {
   padding: 0;
   margin: 0;
   font-family: Inter, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 23vh;
+  background-color: rgb(223, 219, 219);
 }
 
 img {
@@ -12,20 +16,22 @@ img {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #21222a;
+  background-color: #050507;
+  width: 700px;
+  border-radius: 7px 7px 0 0;
 }
 
 .L-div {
   display: flex;
   align-items: center;
-  padding: 20px 30px 20px 35px;
+  padding: 10px 30px 10px 35px;
   color: #61dafb;
   font-weight: 700;
 }
 
 .R-div {
   align-items: center;
-  padding: 40px 30px 10px 0;
+  padding: 20px 20px 0 0;
   color: #deebf8;
   font-weight: 600;
 }
@@ -33,31 +39,62 @@ nav {
 .img-div {
   background-image: url("/public/OIP.jpg");
   background-repeat: no-repeat;
-  width: 100vw;
-  float: right;
-}
-
-.img-div img {
+  width: 180px;
+  height: 180px;
   position: absolute;
-  float: right;
+  top: 43vh;
+  left: 60vw;
 }
 
 .main-div {
-  background-color: #282d35;
-  opacity: 0.95;
-  color: white;
-  padding: 40px 0 40px 50px;
-}
-
-h1 {
-  margin-bottom: 10px;
+  background-color: #010102;
+  opacity: 0.85;
+  color: rgb(242, 242, 245);
+  width: 650px;
+  padding: 30px 0 30px 50px;
+  border-radius: 0 0 7px 7px;
 }
 
 li {
-  margin: 3px 0 3px 40px;
+  margin: 3px 0 3px 5px;
 }
 
 li::marker {
   font-size: 1.5rem;
   color: #61dafb;
+}
+
+@media screen and (width <= 450px) {
+  nav {
+    width: 350px;
+  }
+
+  .main-div {
+    width: 335px;
+    padding: 25px 0 30px 15px;
+    font-size: smaller;
+  }
+
+  .img-div {
+    top: 43vh;
+    left: 63vw;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+  }
+
+  .L-div {
+    font-weight: bolder;
+    font-size: smaller;
+    padding: 5px 10px 5px 5px;
+  }
+
+  .R-div {
+    font-size: x-small;
+    padding: 17px 5px 0 7px;
+  }
+
+  img {
+    margin-right: 5px;
+  }
 }
